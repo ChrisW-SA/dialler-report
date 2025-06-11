@@ -103,8 +103,8 @@ if 'dialer_calls' in st.session_state:
         st.dataframe(dialer_calls, use_container_width=True, hide_index=True)
 
     # === Row 4: Dialer CDRS === #
-    # if 'dialer_cdrs' in st.session_state:
-    #     dialer_cdrs = st.session_state['dialer_cdrs']
-    #     with st.container():
-    #         st.header('Dialer CDRS')
-    #         st.dataframe(dialer_cdrs, use_container_width=True, hide_index=True)
+    if 'dialer_cdrs' in st.session_state:
+        dialer_cdrs = st.session_state['dialer_cdrs']
+        with st.container():
+            st.header('Dialer CDRS')
+            st.dataframe(dialer_cdrs, use_container_width=True, hide_index=True)
